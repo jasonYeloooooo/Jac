@@ -15,7 +15,7 @@ import {
 } from 'antd-mobile-icons'
 import Home from './page/Home/home'
 
-import './main.less'
+import styles from './main.module.less'
 
 const Bottom: FC = () => {
   const navigate = useNavigate()
@@ -63,17 +63,17 @@ export default function main() {
     
       <div className="app">
 
-        <div className="top">
+        <div className={styles.app}>
           <NavBar>配合路由使用</NavBar>
         </div>
 
-        <div className="body">
+        <div className={styles.body}>
         <Routes >
               <Route exact path='/home'element = {<Home/>}/>
         </Routes>
         </div>
 
-        <div className="bottom">
+        <div className={styles.bottom}>
           <Bottom />
         </div>
       </div>
