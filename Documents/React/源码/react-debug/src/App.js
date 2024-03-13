@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(props) {
+  let person = props.size
+  console.log(person)
   return (
     <div className="App">
       <header className="App-header">
