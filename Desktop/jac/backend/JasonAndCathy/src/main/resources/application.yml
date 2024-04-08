@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Jac
+    username: root
+    password: 85995032
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启下划线命名和驼峰命名转换
+
